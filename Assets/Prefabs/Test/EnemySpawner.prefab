@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1916183286062646}
+  m_IsPrefabParent: 1
+--- !u!1 &1916183286062646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4638195619001222}
+  - component: {fileID: 114886789148399820}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: WaveSystem
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4638195619001222
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916183286062646}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.16800003, y: 1.2559998, z: -9.344001}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114886789148399820
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1916183286062646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0230289b0bdcee94f9ce64772a94b42e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentAmountOfEnemies: 0
+  enemies:
+  - {fileID: 1768722718546480, guid: 65d46c1c935b201449746e1489a0b574, type: 2}
+  - {fileID: 1313509662814552, guid: c3deb889e41306944af76a7529a39581, type: 2}
+  - {fileID: 1768722718546480, guid: 65d46c1c935b201449746e1489a0b574, type: 2}
+  amountOfEnemies: 8
+  upEnemies: 5
+  upHealth: 1.05
+  downTime: 1.07
+  ork: 8
+  dog: 4
+  troll: 1
+  orkSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  dogSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  trollSpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  wave: {fileID: 0}
+  waveAmount: 0
+  randomspawnOrk: {fileID: 4531354539626684, guid: 65d46c1c935b201449746e1489a0b574,
+    type: 2}
+  randomspawnDog: {fileID: 4589549010577386, guid: c3deb889e41306944af76a7529a39581,
+    type: 2}
+  randomspawnTroll: {fileID: 4531354539626684, guid: 65d46c1c935b201449746e1489a0b574,
+    type: 2}
+  totalEnemies: {fileID: 0}
+  spawnWait: 0
+  spawnLeastWait: 1
+  spawnMostWait: 3
+  stop: 0
